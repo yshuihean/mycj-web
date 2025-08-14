@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  padding: var(--space-lg) 0;
+  background: var(--color-hover);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.scrollTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}

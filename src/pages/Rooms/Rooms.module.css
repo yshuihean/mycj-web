@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.head {
+  margin-bottom: var(--space-lg);
+  font-size: 28px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;          /* 关键：超行自动换 */
+  justify-content: center;  /* 水平居中 */
+  gap: 32px;                /* 卡片间距 */
+}

@@ -1,0 +1,61 @@
+:root {
+  /* ===浅色（默认）=== */
+  --color-primary: hsl(358 100% 68%);
+  --color-primary-light: hsl(358 100% 75%);
+  --color-primary-dark: hsl(358 100% 45%);
+
+  /* 中性色 */
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-border: #e5e5e5;
+  --color-hover: #f7f7f7;
+
+  /* 强调按钮 */
+  --color-btn: var(--color-primary);
+
+  /* 间距 & 圆角 & 阴影 */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --radius: 8px;
+  --shadow: 0 2px 8px hsla(0 0% 0% / .35);
+  --shadow-lg: 0 8px 24px hsla(0 0% 0% / .45);
+}
+
+/* 自动跟随系统切换颜色 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: hsl(358 95% 65%);
+    --color-primary-light: hsl(358 95% 72%);
+    --color-primary-dark: hsl(358 95% 52%);
+
+    --color-bg: #ffffff;
+    --color-surface: #1e1e1e;
+    --color-text: #1a1a1a;
+    --color-text-secondary: #666666;
+    --color-border: #e5e5e5;
+    --color-hover: #f7f7f7;
+
+    --shadow: 0 2px 8px hsla(0 0% 0% / .35);
+    --shadow-lg: 0 8px 24px hsla(0 0% 0% / .45);
+  }
+}
+
+:root:where(html.dark) {
+  --color-primary: hsl(358 95% 65%);
+  --color-primary-light: hsl(358 95% 72%);
+  --color-primary-dark: hsl(358 95% 52%);
+
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-text: #e5e5e5;
+  --color-text-secondary: #b0b0b0;
+  --color-border: #2e2e2e;
+  --color-hover: #2a2a2a;
+
+  --shadow: 0 2px 8px hsla(0 0% 0% / .35);
+  --shadow-lg: 0 8px 24px hsla(0 0% 0% / .45);
+}

@@ -1,0 +1,83 @@
+/* RoomCard.module.css - 放大版 */
+.card {
+  flex: 0 1 360px;
+  max-width: 100%;              /* 卡片更宽 */
+  border-radius: 12px;           /* 圆角更大 */
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform .3s;
+  box-shadow: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);   /* 鼠标悬停时更明显的抬起 */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carousel {
+  position: relative;
+  height: 240px;                 /* 图高度 ↑ */
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  padding: 24px;                 /* 内边距 ↑ */
+}
+
+.title {
+  font-size: 22px;               /* 标题 ↑ */
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 20px;               /* 价格 ↑ */
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stock {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 12px 28px;            /* 按钮更大 */
+  border-radius: var(--radius);
+  font-size: 16px;
+}
+
+/* 箭头按钮同步放大 */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 180px;
+  background: rgba(0, 0, 0, 0.45);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+.prev { left: 0; border-radius: 0 8px 8px 0; }
+.next { right: 0; border-radius: 8px 0 0 8px; }

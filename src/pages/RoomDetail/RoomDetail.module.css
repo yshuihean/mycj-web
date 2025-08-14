@@ -1,0 +1,50 @@
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+.carousel {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.carousel img {
+  width: 120%;
+  height: 110%;
+  object-fit: cover;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 80px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.prev { left: 0; border-radius: 0 6px 6px 0; }
+.next { right: 0; border-radius: 6px 0 0 6px; }
+.info {
+  margin-top: var(--space-lg);
+}
+.bookBtn {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: var(--radius);
+  margin-top: var(--space-md);
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.desc {
+    font-size: 18px;
+    font-weight: 400;
+}
